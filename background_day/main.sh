@@ -36,5 +36,6 @@ if STATE_CONNECTION=true; then
     then
         feh --randomize --bg-fill "$FILE"
 	betterlockscreen -u $FILE -w blur -r $(xrandr | grep "*" | awk '{ print$1 }')
+        cp $FILE /usr/share/backgrounds/back.jpg
     fi
 fi
